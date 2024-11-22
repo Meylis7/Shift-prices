@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <!-- Marquee ========================== -->
+    <section class="marquee">
+        <div class="auto_container">
+            <div class="marquee_wrap">
+                <div class="marquee_inner-box">
+                    <a href="#" class="marquee_inner-box-item">
+                        1 Türkmenistanyň Prezidenti Türkmenistanyň Keselleriň ýaýramagyna ✦
+                    </a>
+                    <a href="#" class="marquee_inner-box-item">
+                        2 Türkmenistanyň adatdan daşary
+                        toparynyň düzümini tassyklady ✦
+                    </a>
+                    <a href="#" class="marquee_inner-box-item">
+                        3 Türkmenistanyň adatdan daşary
+                        toparynyň düzümini tassyklady ✦
+                    </a>
+                    <a href="#" class="marquee_inner-box-item">
+                        4 Türkmenistanyň Prezidenti adatdan daşary
+                        toparynyň düzümini tassyklady ✦
+                    </a>
+                    <a href="#" class="marquee_inner-box-item">
+                        5 Türkmenistanyň Lorem ipsum dolor sit amet. ✦
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Marquee end ====================== -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script>
+        $('.marquee_inner-box').slick({
+            speed: 8000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            centerMode: true,
+            cssEase: "linear",
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            infinite: true,
+            initialSlide: 1,
+            arrows: false,
+            buttons: false,
+        });
+    </script>
+
+</body>
+
+</html>

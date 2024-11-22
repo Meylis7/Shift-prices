@@ -192,24 +192,50 @@
         <div class="marquee-row">
             <div class="marquee-block marquee1">
                 <ul class="marquee-item-list">
-                    <li> <a href="#">HAVA YOLU TAŞIMACILIĞI</a></li>
-                    <li> <a href="#">PARSİYEL</a></li>
-                    <li> <a href="#">LİMAN HİZMETLERİ </a></li>
-                    <li> <a href="#">KARA YOLU</a></li>
+                    <li> <a href="#">1 HAVA YOLU TAŞIMACILIĞI</a></li>
+                    <li> <a href="#">2 PARSİYEL</a></li>
+                    <li> <a href="#">3 LİMAN HİZMETLERİ </a></li>
+                    <li> <a href="#">4 KARA YOLU</a></li>
                 </ul>
             </div>
         </div>
 
-        <!-- <div class="prices_marquee">
-                    <marquee behavior="slide " direction="left" loop="-1">
-                        <a href="#">HAVA YOLU TAŞIMACILIĞI</a>
-                        <a href="#">PARSİYEL</a>
-                        <a href="#">LİMAN HİZMETLERİ </a>
-                        <a href="#">KARA YOLU</a>
-                    </marquee>
-                </div> -->
+        <div class="prices_marquee">
+            <marquee class="marq" behavior="slide " direction="left" loop="-1" scrollamount="10">
+                <a href="#">1 HAVA YOLU TAŞIMACILIĞI</a>
+                <a href="#">2 PARSİYEL</a>
+                <a href="#">3 LİMAN HİZMETLERİ </a>
+                <a href="#">4 KARA YOLU</a>
+                <a href="#">5 HAVA YOLU TAŞIMACILIĞI</a>
+                <a href="#">6 PARSİYEL</a>
+                <a href="#">7 LİMAN HİZMETLERİ </a>
+                <a href="#">8 KARA YOLU</a>
+            </marquee>
+        </div>
+
+        <div class="marquee_inner-box">
+            <a href="#" class="marquee_inner-box-item">
+                1 HAVA YOLU TAŞIMACILIĞI
+            </a>
+            <a href="#" class="marquee_inner-box-item">
+                2 PARSİYEL
+            </a>
+            <a href="#" class="marquee_inner-box-item">
+                3 LİMAN HİZMETLERİ
+            </a>
+            <a href="#" class="marquee_inner-box-item">
+                4 KARA YOLU
+            </a>
+            <a href="#" class="marquee_inner-box-item">
+                5 HAVA YOLU TAŞIMACILIĞI
+            </a>
+        </div>
+
     </section>
     <!-- Prices end ============================================ -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slick.min.js"></script>
 
     <script>
         // Select all marquee blocks on the page
@@ -233,7 +259,22 @@
             var liEle = Array.from(marqueeBlock.querySelectorAll('.marquee-item-list li'));
         });
 
-
+        $('.marquee_inner-box').slick({
+            speed: 2000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            centerMode: true,
+            cssEase: "linear",
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            infinite: true,
+            initialSlide: 1,
+            arrows: false,
+            buttons: false,
+            pauseOnHover: false,
+            focusOnSelect: false
+        });
     </script>
 
 </body>
