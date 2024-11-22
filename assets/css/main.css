@@ -738,6 +738,9 @@ li {
   .auto_container {
     padding: 0 35px;
   }
+  .prices_place {
+    font-size: 30px;
+  }
 }
 @media (max-width: 400px) {
   .auto_container {
